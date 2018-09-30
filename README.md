@@ -13,7 +13,7 @@ Content for Udacity's Machine Learning curriculum, which includes projects and t
 Check the jupyter notebook here: [boston_housing.ipynb](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/boston_housing/boston_housing.ipynb)
 
 - This is the project after learning the **"Model Evaluation and Validation"** section.
-- In this project, we go through the basic ML(machine learning) procedures and get the predicted selling price for clients' home. These procedures include:
+- In this project, we will go through the basic ML(machine learning) procedures and get the predicted selling price for clients' home. These procedures include:
   1. Data Exploration(statistically)
   2. Utilize techniques like GridSearch and CrossValidation to optimize our learning algorithms/models
   3. Analyzing Model Performance using Learning Curves and Complexity Curves
@@ -28,9 +28,14 @@ You can check the improved version here(only coding part):[boston_housing_versio
 Check the jupyter notebook here: [finding_donors.ipynb](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/finding_donors/finding_donors.ipynb)
 
 - This is the project after learning the **"Supervised Learning"** section.
-- to be continue...
-
-
+- After applying some data preprocessing techniques, we discussed and implemented:
+  1. Create a training/predicting pipeline
+  2. Evaluate the performance of models such as run time and f-beta scores.
+  3. Model hyperparameters tuning
+  4. Extract feature importance and/or feature selection
+- The dataset for this project originates from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Census+Income), and we will use 45,222 data points and 13 features to predicts whether an individual makes more than \$50,000. Due to the imbalance in the dataset, we used the F-beta score to evaluate our models.
+- The main part of this project, is to evaluate the models we have learned, such as AdaBoost, Support Vector Machines, Random Forest, and Gradient boosting(LightGBM). By using training/predicting pipelines and visualization techniques, we can more confidently choose the best model and then tune hyperparameters.
+You can check the LightGBM version here(only coding part):[finding_donors_version2.ipynb](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/finding_donors/finding_donors_version2.ipynb)
 
 ## Project 3: Dog breed classifier
 Check the jupyter notebook here: [dog_app.ipynb](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/dog-project/dog_app.ipynb)
