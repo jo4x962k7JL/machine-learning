@@ -176,42 +176,40 @@ def Xception_predict_breed(img_path):
     predicted_vector = Xception_model.predict(bottleneck_feature)
     return dog_names[np.argmax(predicted_vector)]
 
-def save_plot_results(file_paths, report):
-    rows = len(file_paths)
-    k = 0
-    for i in file_paths:
-        dog_breed = Xception_predict_breed(i)
-        for root, dirs, files in walk('dogImages/train/'):
+def save_plot_results(file_paths):
+    for idx, image in enumerate(file_paths):
+        dog_breed = Xception_predict_breed(image)
+        for root, dirs, files in os.walk('dogImages/train/'):
             if dog_breed in root:
                 family = root + '/' + files[0]
                 break
         fig = plt.figure(figsize=(30,30))
-        k += 1
-        fig.add_subplot(rows, 3, k)
-        plt.imshow(np.expand_dims(ndimage.imread(i), 0)[0])
-        if face_detector2(i):
-            plt.title('Hi Human! Your dog breed is {}'.format(dog_breed), fontdict={'fontsize':20})
-            k += 1
-            fig.add_subplot(rows, 3, k)
-            plt.imshow(np.expand_dims(ndimage.imread('test_images/arrow.png'), 0)[0])
+        k = 1
+        fig.set_size_inches(4, 2)
+        fig.add_subplot(1, 2, k)
+        plt.imshow(np.expand_dims(ndimage.imread(image), 0)[0])
+        if face_detector(image):
+            plt.title('Hi Human!\nYour dog breed is {}'.format(dog_breed), fontdict={'fontsize':8})
             plt.axis('off')
             k += 1
-            fig.add_subplot(rows, 3, k)
+            fig.add_subplot(1, 2, k)
             plt.imshow(np.expand_dims(ndimage.imread(family), 0)[0])
-            plt.title('This is your family!', fontdict={'fontsize':20})
-        elif dog_detector(i):
-            plt.title('Hi Dog! I guess your breed is {}'.format(dog_breed), fontdict={'fontsize':20})
-            k += 1
-            fig.add_subplot(rows, 3, k)
-            plt.imshow(np.expand_dims(ndimage.imread('test_images/arrow.png'), 0)[0])
+            plt.title('This is your family!', fontdict={'fontsize':8})
+            plt.axis('off')
+            plt.savefig('funfact'+str(idx)+'.jpg',dpi=200)
+        elif dog_detector(image):
+            plt.title('Hi Dog!\nI guess your breed is {}'.format(dog_breed), fontdict={'fontsize':8})
             plt.axis('off')
             k += 1
-            fig.add_subplot(rows, 3, k)
+            fig.add_subplot(1, 2, k)
             plt.imshow(np.expand_dims(ndimage.imread(family), 0)[0])
-            plt.title('This is your family!', fontdict={'fontsize':20})
+            plt.title('This is your family!', fontdict={'fontsize':8})
+            plt.axis('off')
+            plt.savefig('funfact'+str(idx)+'.jpg', dpi=200)
         else:
-            plt.title('You are neither human nor dog!', fontdict={'fontsize':20})
-    plt.savefig(report)
+            plt.title('You are neither human nor dog!', fontdict={'fontsize':8})
+            plt.axis('off')
+            plt.savefig('funfact'+str(idx)+'.jpg', dpi=200)
 
 file_paths = ['test_images/Boxer.jpg',
               'test_images/Labrador_retriever.jpg',
@@ -219,5 +217,5 @@ file_paths = ['test_images/Boxer.jpg',
               'test_images/Golden_retriever.jpg',
               'test_images/woman.jpg',
               'test_images/man.jpg']
-save_plot_results(file_paths, 'fun_fact.png')
+save_plot_results(file_paths, 'fun_fact')
 print('Run time: {:.2f}mins'.format((time.time() - start)/60))
