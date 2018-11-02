@@ -27,6 +27,7 @@ def face_detector(img_path):
     faces2 = face_cascade.detectMultiScale(gray)
     if len(faces1) > 0 and len(faces2) > 0: return True
     return False
+
 # Dog detector(using ResNet-50 pretrained on ImageNet)
 ResNet50_model = keras.applications.resnet50.ResNet50(weights='imagenet')
 def path_to_tensor(img_path):
@@ -45,6 +46,7 @@ print('\n======================== Create a CNN to Classify Dog Breeds (using Tra
 start = time.time()
 bottleneck_features = np.load('bottleneck_features/DogXceptionData.npz')
 train_Xception = bottleneck_features['train']
+
 # valid_Xception = bottleneck_features['valid']
 test_Xception = bottleneck_features['test']
 Xception_model = keras.models.Sequential()
