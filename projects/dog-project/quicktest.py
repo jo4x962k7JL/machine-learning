@@ -60,7 +60,7 @@ Xception_model.load_weights('saved_models/weights.best.Xception.hdf5')
 Xception_predictions = [np.argmax(Xception_model.predict(np.expand_dims(feature, axis=0))) for feature in test_Xception]
 test_accuracy = 100*np.sum(np.array(Xception_predictions)==np.argmax(test_targets, axis=1))/len(Xception_predictions)
 print('Test accuracy: {:.4f}%'.format(test_accuracy))
-print('Run time: {:.2f}mins'.format((time.time() - start)/60))
+print('Run time: {:.2f}seconds'.format((time.time() - start)))
 
 # For fun
 def Xception_predict_breed(img_path):
