@@ -82,6 +82,12 @@ This will give the distributor insight into how to best structure their delivery
 Check the jupyter notebook here: [Quadcopter_Project.ipynb](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/RL-Quadcopter-2-master/Quadcopter_Project.ipynb)
 
 - This is the project of the **"Reinforcement Learning"** section.
+- In this project, our goal is to train a quadcopter how to fly from one initial position to another target position(e.g. from (x, y, z)=(0, 0, 100) to (0, 0, 120)) by adjusting four rotors' speed(each rotor speed ranges from 0~900). We discussed and implemented:
+  1. Specify a customized reward function
+  2. Implements a DDPG(Deep Deterministic Policy Gradient) agent with Ornstein–Uhlenbeck noise added in externally to produce the desired stochasticity in actions taken
+  3. Design helper files to save the model's best hyperparameters, and generate visualizations
+**TODO: Using ROS(Robot Operating System) and applying SLAM(Simultaneous localization and mapping) to train a quadcopter to identify and track a target.
+[ref] [Robotics Software Engineer Nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209)
 
 <img width="855" alt="printscreen 2018-11-02 6 04 40" src="https://user-images.githubusercontent.com/26728779/47946562-86bb9300-deca-11e8-8c4e-70dd25930fe7.png">
 
