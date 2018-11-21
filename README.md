@@ -33,7 +33,7 @@ Check the jupyter notebook here: [finding_donors.ipynb](https://github.com/jo4x9
 - This is the project of the **"Supervised Learning"** section.
 - After applying some data preprocessing techniques, we discussed and implemented:
   1. Create a training/predicting **pipeline**
-  2. Evaluate the performance of different models such as run time and f-beta scores.
+  2. Evaluate the performance of different models such as run time and f-beta scores
   3. Model hyperparameters tuning
   4. Extract feature importance and/or feature selection
   
@@ -48,10 +48,10 @@ Check the jupyter notebook here: [dog_app.ipynb](https://github.com/jo4x962k7JL/
 
 - This is the project of the **"Deep Learning"** section.
 - In this project, we build two detectors for human face and dog. Then, create CNNs in two ways, from scratch and transfer learning, to classify dog breeds. The numbers of training, validation, and testing dog images are 6680, 835 and 836 respectively. And there are 133 total dog categories. we discussed and implemented:
-  1. Use dlib(HOG-features) and cv2.CascadeClassifier(Harr-features) to see if an image contains a human face. It achieves 99.30% accuracy of detecting human face correctly on 1000 images with a clearly presented face.
-  2. Use a ResNet-50 model pre-trained on ImageNet to see if an image contains a dog. It achieves 98.40% accuracy of detecting dog(s) correctly on 1000 images.
-  3. Classify dog breeds by creating a CNN from scratch. It achieves 40.79% test accuracy.
-  4. Classify dog breeds by creating a CNN using **Transfer Learning** with pre-trained Xception bottleneck features. Finally, it achieves **85.53%** test accuracy.
+  1. Use dlib(HOG-features) and cv2.CascadeClassifier(Harr-features) to see if an image contains a human face. It achieves 99.30% accuracy of detecting human face correctly on 1000 images with a clearly presented face
+  2. Use a ResNet-50 model pre-trained on ImageNet to see if an image contains a dog. It achieves 98.40% accuracy of detecting dog(s) correctly on 1000 images
+  3. Classify dog breeds by creating a CNN from scratch. It achieves 40.79% test accuracy
+  4. Classify dog breeds by creating a CNN using **Transfer Learning** with pre-trained Xception bottleneck features. Finally, it achieves **85.53%** test accuracy
 
 <img width="810" alt="printscreen 2018-11-01 8 21 44" src="https://user-images.githubusercontent.com/26728779/47893430-2ec55380-de1a-11e8-8092-af4f1cf9ec36.png">
 <img width="796" alt="printscreen 2018-11-01 8 21 54" src="https://user-images.githubusercontent.com/26728779/47893431-308f1700-de1a-11e8-9f14-c741d883a2cf.png">
@@ -72,9 +72,9 @@ Check the jupyter notebook here: [customer_segments.ipynb](https://github.com/jo
 - Consider how the different groups of customers may be affected differently by a specific delivery scheme, we will:
   1. Analyze various customers' annual spending amounts of diverse product categories
   2. Apply one of the most famous "Feature Extraction" algorithms - **PCA(Principal Component Analysis)** to draw conclusions about the underlying structure of the wholesale customer data
-  3. Use **GMM(Gaussian Mixture Model)** clustering algorithm to identify the various customer segments hidden in the data.
-  4. Run A/B test to determine whether making delivery scheme change will affect its customers positively or negatively.  
-This will give the distributor insight into how to best structure their delivery service to meet the needs of each customer.
+  3. Use **GMM(Gaussian Mixture Model)** clustering algorithm to identify the various customer segments hidden in the data
+  4. Run A/B test to determine whether making delivery scheme change will affect its customers positively or negatively  
+- This will give the distributor insight into how to best structure their delivery service to meet the needs of each customer.
 
 <img width="784" alt="printscreen 2018-11-02 6 06 08" src="https://user-images.githubusercontent.com/26728779/47946563-86bb9300-deca-11e8-8fda-b63e3838c7f3.png">
 
@@ -85,8 +85,8 @@ Check the jupyter notebook here: [Quadcopter_Project.ipynb](https://github.com/j
 - In this project, our goal is to train a quadcopter how to fly from one initial position to another target position(e.g. from (x, y, z)=(0, 0, 100) to (0, 0, 120)) by adjusting four rotors' speed(each rotor speed ranges from 0~900). We discussed and implemented:
   1. Specify a customized reward function
   2. Implements a DDPG(Deep Deterministic Policy Gradient) agent with Ornstein–Uhlenbeck noise added in externally to produce the desired stochasticity in actions taken
-  3. Design helper files to save the model's best hyperparameters, and generate visualizations
-**TODO: Using ROS(Robot Operating System) and applying SLAM(Simultaneous localization and mapping) to train a quadcopter to identify and track a target.
+  3. Design helper files to save the model's best hyperparameters, and generate visualizations  
+- **TODO: Using ROS(Robot Operating System) and applying SLAM(Simultaneous localization and mapping) to train a quadcopter to identify and track a target.
 [ref] [Robotics Software Engineer Nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209)
 
 <img width="855" alt="printscreen 2018-11-02 6 04 40" src="https://user-images.githubusercontent.com/26728779/47946562-86bb9300-deca-11e8-8c4e-70dd25930fe7.png">
