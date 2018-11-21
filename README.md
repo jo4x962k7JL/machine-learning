@@ -33,7 +33,7 @@ Check the jupyter notebook here: [finding_donors.ipynb](https://github.com/jo4x9
 - This is the project of the **"Supervised Learning"** section.
 - After applying some data preprocessing techniques, we discussed and implemented:
   1. Create a training/predicting **pipeline**
-  2. Evaluate the performance of models such as run time and f-beta scores.
+  2. Evaluate the performance of different models such as run time and f-beta scores.
   3. Model hyperparameters tuning
   4. Extract feature importance and/or feature selection
   
@@ -73,7 +73,7 @@ Check the jupyter notebook here: [customer_segments.ipynb](https://github.com/jo
   1. Analyze various customers' annual spending amounts of diverse product categories
   2. Apply one of the most famous "Feature Extraction" algorithms - **PCA(Principal Component Analysis)** to draw conclusions about the underlying structure of the wholesale customer data
   3. Use **GMM(Gaussian Mixture Model)** clustering algorithm to identify the various customer segments hidden in the data.
-  4. Run A/B test to determine whether making delivery scheme change will affect its customers positively or negatively.
+  4. Run A/B test to determine whether making delivery scheme change will affect its customers positively or negatively.  
 This will give the distributor insight into how to best structure their delivery service to meet the needs of each customer.
 
 <img width="784" alt="printscreen 2018-11-02 6 06 08" src="https://user-images.githubusercontent.com/26728779/47946563-86bb9300-deca-11e8-8fda-b63e3838c7f3.png">
