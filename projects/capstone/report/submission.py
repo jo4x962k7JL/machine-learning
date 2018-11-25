@@ -175,4 +175,4 @@ for n_fold, (train_idx, valid_idx) in enumerate(folds.split(X_train, y_train)):
 print('Full AUC score %.6f' % roc_auc_score(y_train, oof_pred))
 submission['TARGET'] = y_pred
 print(submission.head())
-submission.to_csv('report.csv', index = False)
+submission.to_csv('submission.csv', index = False)

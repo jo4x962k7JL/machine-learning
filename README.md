@@ -95,7 +95,7 @@ Check the jupyter notebook here: [Quadcopter_Project.ipynb](https://github.com/j
 Check the repository here: [Kaggle-Home-Credit-Default-Risk](https://github.com/jo4x962k7JL/Kaggle-Home-Credit-Default-Risk), and the [proposal](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/capstone/proposal.pdf)、
 [report](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/capstone/report/report.pdf).
 
-- This is the final capstone project. It is a Kaggle competition hosted by 'Home Credit'，You can find the full description and dataset [here](https://www.kaggle.com/c/home-credit-default-risk).
+- This is the final capstone project. It is a Kaggle competition hosted by 'Home Credit'. You can find the full description and dataset [here](https://www.kaggle.com/c/home-credit-default-risk).
 - In this project, our goal is to build a prediction model to classify the clients’ repayment abilities. The problem is a machine learning classification task, hence supervised algorithms including logistic regression and random forest are potential solutions. The evaluation metric used is “Area under the ROC curve”(also called AUC), and we will discussed and implemented:
   1. EDA(Exploratory Data Analysis): Exploratory visualization includes 
 **bar chart、KDE(kernel density estimate) plot, correlation heatmap, scatter plot, Venn diagrams, and so on.**
@@ -106,7 +106,7 @@ Check the repository here: [Kaggle-Home-Credit-Default-Risk](https://github.com/
   6. Stacking  
 - This would be very useful and time-saving if we generate new training files after step 1~3. We also design helper files to save the model's best hyperparameters, it's very useful especially because we apply stack techniques.
 - **One-line command in CLI**     
-- Future Improvement: Bayesian hyper-parameter optimization, Model diversity, Feature diversity
+- Future Improvement: Bayesian hyper-parameter optimization, Model diversity, Feature diversity.
 
 <img width="1222" alt="printscreen 2018-11-02 7 02 10" src="https://user-images.githubusercontent.com/26728779/47947019-ee291100-ded1-11e8-9a0f-0f6cdb9f1e59.png">
 <img width="901" alt="printscreen 2018-11-02 7 04 58" src="https://user-images.githubusercontent.com/26728779/47947031-3b0ce780-ded2-11e8-851b-690e132a99ba.png">

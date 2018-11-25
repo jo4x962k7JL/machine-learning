@@ -13,7 +13,7 @@ python3 preprocessing_previous_final.py
 echo '=============== Start generate a whole new file for training and predicting ==============='
 python3 datagen.py
 echo '=============== Start Training 1st-level(3 models) and 2nd-level model ==============='
-python3 report.py
+python3 submission.py
 echo '==================================================='
 echo ' END '
 echo '==================================================='
