@@ -36,7 +36,7 @@ Check the jupyter notebook here: [finding_donors.ipynb](https://github.com/jo4x9
   2. Evaluate the performance of different models such as run time and f-beta scores
   3. Model hyperparameters tuning
   4. Extract feature importance and/or feature selection
-  
+
 <img width="897" alt="printscreen 2018-11-02 6 03 25" src="https://user-images.githubusercontent.com/26728779/47946564-87542980-deca-11e8-996e-abd2c98f278d.png">
 
 - The dataset for this project originates from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Census+Income), and we will use 45,222 data points and 13 features to predicts whether an individual makes more than \$50,000. Due to the imbalance in the dataset, we used the F-beta score to evaluate our models.
@@ -73,7 +73,7 @@ Check the jupyter notebook here: [customer_segments.ipynb](https://github.com/jo
   1. Analyze various customers' annual spending amounts of diverse product categories
   2. Apply one of the most famous "Feature Extraction" algorithms - **PCA(Principal Component Analysis)** to draw conclusions about the underlying structure of the wholesale customer data
   3. Use **GMM(Gaussian Mixture Model)** clustering algorithm to identify the various customer segments hidden in the data
-  4. Run A/B test to determine whether making delivery scheme change will affect its customers positively or negatively  
+  4. Run A/B test to determine whether making delivery scheme change will affect its customers positively or negatively
 - This will give the distributor insight into how to best structure their delivery service to meet the needs of each customer.
 
 <img width="784" alt="printscreen 2018-11-02 6 06 08" src="https://user-images.githubusercontent.com/26728779/47946563-86bb9300-deca-11e8-8fda-b63e3838c7f3.png">
@@ -85,27 +85,27 @@ Check the jupyter notebook here: [Quadcopter_Project.ipynb](https://github.com/j
 - In this project, our goal is to train a quadcopter how to fly from one initial position to another target position(e.g. from (x, y, z)=(0, 0, 100) to (0, 0, 120)) by adjusting four rotors' speed(each rotor speed ranges from 0~900). We discussed and implemented:
   1. Specify a customized reward function
   2. Implements a DDPG(Deep Deterministic Policy Gradient) agent with Ornstein–Uhlenbeck noise added in externally to produce the desired stochasticity in actions taken
-  3. Design helper files to save the model's best hyperparameters, and generate visualizations  
-- **TODO**: Using ROS(Robot Operating System) and applying SLAM(Simultaneous localization and mapping) to train a quadcopter to identify and track a target.  
+  3. Design helper files to save the model's best hyperparameters, and generate visualizations
+- **TODO**: Using ROS(Robot Operating System) and applying SLAM(Simultaneous localization and mapping) to train a quadcopter to identify and track a target.
 [ref] [Robotics Software Engineer Nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209)
 
 <img width="855" alt="printscreen 2018-11-02 6 04 40" src="https://user-images.githubusercontent.com/26728779/47946562-86bb9300-deca-11e8-8c4e-70dd25930fe7.png">
 
 ## Project Capstone: Kaggle competition
-Check the repository here: [Kaggle-Home-Credit-Default-Risk](https://github.com/jo4x962k7JL/Kaggle-Home-Credit-Default-Risk), and the [proposal](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/capstone/proposal.pdf)、
+Check the repository here: [Kaggle-Home-Credit-Default-Risk](https://github.com/jo4x962k7JL/udacity_MLND/tree/master/projects/capstone/report), and the [proposal](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/capstone/proposal.pdf)、
 [report](https://github.com/jo4x962k7JL/udacity_MLND/blob/master/projects/capstone/report/report.pdf).
 
 - This is the final capstone project. It is a Kaggle competition hosted by 'Home Credit'. You can find the full description and dataset [here](https://www.kaggle.com/c/home-credit-default-risk).
 - In this project, our goal is to build a prediction model to classify the clients’ repayment abilities. The problem is a machine learning classification task, hence supervised algorithms including logistic regression and random forest are potential solutions. The evaluation metric used is “Area under the ROC curve”(also called AUC), and we will discussed and implemented:
-  1. EDA(Exploratory Data Analysis): Exploratory visualization includes 
+  1. EDA(Exploratory Data Analysis): Exploratory visualization includes
 **bar chart、KDE(kernel density estimate) plot, correlation heatmap, scatter plot, Venn diagrams, and so on.**
   2. Data preprocessing: Deal with anomalies, missing values, categorical features(using Likelihood Encoding, One-Hot Encoding, Label Encoding).
   3. Feature Engineering
   4. Use Gradient-Boosting models(LGBMClassifier, CatBoostClassifier, XGBClassifier) to make predictions.
   5. Hyperparameter Tuning: Helper functions for saving the best hyperparameters
-  6. Stacking  
+  6. Stacking
 - This would be very useful and time-saving if we generate new training files after step 1~3. We also design helper files to save the model's best hyperparameters, it's very useful especially because we apply stack techniques.
-- **One-line command in CLI**     
+- **One-line command in CLI**
 - Future Improvement: Bayesian hyper-parameter optimization, Model diversity, Feature diversity.
 
 <img width="1222" alt="printscreen 2018-11-02 7 02 10" src="https://user-images.githubusercontent.com/26728779/47947019-ee291100-ded1-11e8-9a0f-0f6cdb9f1e59.png">
